@@ -23,28 +23,28 @@ router
    * @apiName CreateSong
    * @apiGroup Song
    *
-   * @apiParam  {String}                 title       
-   * @apiParam  {String}                 artist      
-   * @apiParam  {String}                 subTitle    
-   * @apiParam  {Number}                 rating      
-   * @apiParam  {String}                 comments    
-   * @apiParam  {String}                 album      
-   * @apiParam  {String}                 year      
-   * @apiParam  {Number}                 number     
-   * @apiParam  {String}                 genre      
-   * @apiParam  {String}                 length     
+   * @apiParam  {String}                 title
+   * @apiParam  {String}                 artist
+   * @apiParam  {String}                 subTitle
+   * @apiParam  {Number}                 rating
+   * @apiParam  {String}                 comments
+   * @apiParam  {String}                 album
+   * @apiParam  {String}                 year
+   * @apiParam  {Number}                 number
+   * @apiParam  {String}                 genre
+   * @apiParam  {String}                 length
    *
-   * @apiSuccess (Created 201) {String}  id         
+   * @apiSuccess (Created 201) {String}  id
    * @apiSuccess (Created 201) {String}  title
-   * @apiSuccess (Created 201) {String}  artist      
-   * @apiSuccess (Created 201) {String}  subTitle       
+   * @apiSuccess (Created 201) {String}  artist
+   * @apiSuccess (Created 201) {String}  subTitle
    * @apiSuccess (Created 201) {Number}  rating
    * @apiSuccess (Created 201) {String}  comments
    * @apiSuccess (Created 201) {String}  album
    * @apiSuccess (Created 201) {String}  year
    * @apiSuccess (Created 201) {Number}  number
    * @apiSuccess (Created 201) {String}  genre
-   * @apiSuccess (Created 201) {String}  length  
+   * @apiSuccess (Created 201) {String}  length
    *
    */
   .post(controller.create);
@@ -57,7 +57,7 @@ router
    * @apiVersion 1.0.0
    * @apiName GetSong
    * @apiGroup Song
-   * 
+   *
    * @apiParam   {String}  id            Song id
    *
    * @apiSuccess {String}  id
@@ -83,7 +83,7 @@ router
    * @apiVersion 1.0.0
    * @apiName GetPlaylistsOfSong
    * @apiGroup Song
-   * 
+   *
    * @apiParam   {String}  id            Song id
    *
    * @apiSuccess {Object[]} playlists of a song.
@@ -100,10 +100,10 @@ router
    * @apiName AddSongToPlaylists
    * @apiGroup Song
    *
-   * @apiParam  {String}                 songId       
+   * @apiParam  {String}                 songId
    * @apiParam  {String[]}               playlistIds
    *
-   * @apiSuccess (Created 201) {Boolean}          
+   * @apiSuccess (Created 201) {Boolean}
    *
    */
   .post(controller.addSongToPlaylists);

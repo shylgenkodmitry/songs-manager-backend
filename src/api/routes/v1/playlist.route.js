@@ -23,10 +23,10 @@ router
    * @apiName CreatePlaylist
    * @apiGroup Playlist
    *
-   * @apiParam  {String}                 name       
+   * @apiParam  {String}                 name
    * @apiParam  {String}                 description
    *
-   * @apiSuccess (Created 201) {String}  name         
+   * @apiSuccess (Created 201) {String}  name
    * @apiSuccess (Created 201) {String}  description
    *
    */
