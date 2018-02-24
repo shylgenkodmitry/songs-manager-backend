@@ -14,6 +14,9 @@ const songSchema = new mongoose.Schema({
     trim: true,
     default: 'Untitled',
   },
+  avatar: {
+    type: String,
+  },
   artist: {
     type: String,
   },

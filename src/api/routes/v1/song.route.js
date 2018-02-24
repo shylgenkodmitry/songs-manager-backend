@@ -24,6 +24,7 @@ router
    * @apiGroup Song
    *
    * @apiParam  {String}                 title
+   * @apiParam  {String}                 avatar
    * @apiParam  {String}                 artist
    * @apiParam  {String}                 subTitle
    * @apiParam  {Number}                 rating
@@ -36,6 +37,7 @@ router
    *
    * @apiSuccess (Created 201) {String}  id
    * @apiSuccess (Created 201) {String}  title
+   * @apiSuccess (Created 201) {String}  avatar
    * @apiSuccess (Created 201) {String}  artist
    * @apiSuccess (Created 201) {String}  subTitle
    * @apiSuccess (Created 201) {Number}  rating
@@ -62,6 +64,7 @@ router
    *
    * @apiSuccess {String}  id
    * @apiSuccess {String}  title
+   * @apiSuccess {String}  avatar
    * @apiSuccess {String}  artist
    * @apiSuccess {String}  subTitle
    * @apiSuccess {Number}  rating
