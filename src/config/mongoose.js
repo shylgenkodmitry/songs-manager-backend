@@ -17,14 +17,14 @@ if (env === 'development') {
 
 /**
 * Connect to mongo db
-*
-* @returns {object} Mongoose connection
+* @returns {promise}
 * @public
 */
-exports.connect = () => {
-  mongoose.connect(mongo.uri, {
-    keepAlive: 1,
-    useMongoClient: true,
-  });
-  return mongoose.connection;
-};
+exports.connect = () => mongoose.connect(mongo.uri, { keepAlive: 1, useMongoClient: true });
+
+/**
+* Disconnect from mongo db
+* @returns {promise}
+* @public
+*/
+exports.disconnect = () => mongoose.disconnect();
