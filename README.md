@@ -34,6 +34,7 @@ Customize .env file:
 ## Running Locally
 
 ```bash
+yarn db:seed
 yarn dev
 ```
 
